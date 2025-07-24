@@ -1,0 +1,39 @@
+export default function WordPressManagement() {
+  return (
+    <>
+      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
+        <div className="space-y-8">
+          {/* <div className=""> */}
+
+          <h3 className="text-4xl font-semibold mb-2">WordPress Management</h3>
+
+          <div>
+            <img
+              src="/wordpressManagement.png"
+              alt="Wordpress Management"
+              className="w-full h-auto rounded-xl"
+            />
+          </div>
+          <p className="mb-2">
+            <b> Comprehensive WordPress Site Management</b>
+          </p>
+          <p className="mb-4">
+            Your website is often the first impression potential customers have
+            of your business. Our WordPress management services cover all
+            aspects of your site, including regular updates, secure backups,
+            robust security measures, and performance optimization. We ensure
+            that your website runs smoothly and efficiently, allowing you to
+            engage your audience without technical worries.
+          </p>
+          <p>
+            Our team also provides SEO optimization to enhance your site’s
+            visibility and attract more visitors. Whether you need help with
+            theme customization, plugin management, or troubleshooting, we are
+            here to ensure your WordPress site is always at its best.
+          </p>
+          {/* </div> */}
+        </div>
+      </main>
+    </>
+  );
+}
