@@ -3,7 +3,6 @@ export default function WordPressManagement() {
     <>
       <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
         <div className="space-y-8">
-          {/* <div className=""> */}
 
           <h3 className="text-4xl font-semibold mb-2">WordPress Management</h3>
 
@@ -31,7 +30,7 @@ export default function WordPressManagement() {
             theme customization, plugin management, or troubleshooting, we are
             here to ensure your WordPress site is always at its best.
           </p>
-          {/* </div> */}
+
         </div>
       </main>
     </>
