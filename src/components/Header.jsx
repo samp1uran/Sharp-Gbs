@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // Make sure to install lucide-react or use any icon library
+import { Menu, X } from "lucide-react";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,16 +25,18 @@ function Header() {
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 items-center">
-          <Link to="/" className="hover:text-neutral-500">
-            Home
+        <nav className="hidden md:flex gap-4 items-center">
+          <Link to="/" className="relative inline-block text-white px-4 py-2 group">
+            <span>Home</span>
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
           </Link>
-          <Link to="/about" className="hover:text-neutral-500">
+          <Link to="/about" className="relative inline-block text-white px-4 py-2 group">
             About Us
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
           </Link>
 
           <div className="relative group">
-            <Link to="/services" className="cursor-pointer hover:text-neutral-500">Services</Link>
+            <Link to="/services" className="relative inline-block text-white px-4 py-2 group">Services</Link>
             <div
               className="absolute left-0 mt-2 w-56 bg-gray-700 p-2 rounded shadow-lg z-10
                   invisible opacity-0 group-hover:visible group-hover:opacity-100
@@ -73,14 +75,17 @@ function Header() {
             </div>
           </div>
 
-          <Link to="/contact" className="hover:text-neutral-500">
+          <Link to="/contact" className="relative inline-block text-white px-4 py-2 group">
             Contact
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
           </Link>
-          <Link to="/privacy" className="hover:text-neutral-500">
+          <Link to="/privacy" className="relative inline-block text-white px-4 py-2 group">
             Privacy
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
           </Link>
-          <Link to="/terms" className="hover:text-neutral-500">
+          <Link to="/terms" className="relative inline-block text-white px-4 py-2 group">
             Terms
+            <span class="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
           </Link>
         </nav>
         <div
