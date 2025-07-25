@@ -3,8 +3,6 @@ import React from "react";
 const Privacy = () => {
   return (
     <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
-      {/* <div className="space-y-8"> */}
-        
 
         <div className="space-y-8">
           <h1 className="text-4xl font-bold mb-2">Privacy Policy of Sharp Gbs</h1>
@@ -77,7 +75,6 @@ const Privacy = () => {
             <li>If you have any questions or concerns about this Privacy Policy, contact us at the official email or phone.</li>
           </ul>
         </div>
-      {/* </div> */}
     </main>
   );
 };
