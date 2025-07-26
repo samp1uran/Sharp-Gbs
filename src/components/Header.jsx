@@ -1,11 +1,15 @@
 import { useState } from "react";
-
+import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { List, ListItemButton, ListItemText } from "@mui/material";
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const handleClick = () => {
+    setMenuOpen(false);
+  };
 
   return (
     <>
@@ -26,180 +30,214 @@ function Header() {
         </button>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-4 items-center">
-          <Link
-            to="/"
-            className="relative inline-block text-white px-4 py-2 group"
-          >
-            <span>Home</span>
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
-          </Link>
-          <Link
-            to="/about"
-            className="relative inline-block text-white px-4 py-2 group"
-          >
-            About Us
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
+        <nav className="hidden md:flex gap-0 items-center">
+          <Link to="/">
+            <Button
+              variant="contained"
+              className="!text-base !shadow-none !bg-gray-800 !normal-case"
+            >
+              Home
+            </Button>
           </Link>
 
-          <div className="relative group">
+          <Link to="/about">
+            <Button
+              variant="contained"
+              className="!text-base !shadow-none !bg-gray-800 !normal-case"
+            >
+              About
+            </Button>
+          </Link>
+
+          <div className="!w-fit relative group">
             <Link
               to="/services"
-              className="relative inline-block text-white px-4 py-2 group"
+              className="relative inline-block text-white  group"
             >
-              Services
+              <Button
+                variant="contained"
+                className="!text-base !shadow-none !bg-gray-800 !normal-case"
+              >
+                Services
+              </Button>
             </Link>
             <div
-              className="absolute left-0 mt-2 w-56 bg-gray-700 p-2 rounded shadow-lg z-10
+              className="absolute left-0 w-56 bg-gray-700 rounded shadow-lg z-10
                   invisible opacity-0 group-hover:visible group-hover:opacity-100
                   transition-all duration-200"
             >
-              <Link
-                to="/services/bookKeeping"
-                className="block px-2 py-1 hover:bg-gray-600"
-              >
-                Bookkeeping
-              </Link>
-              <Link
-                to="/services/wordpressManagement"
-                className="block px-2 py-1 hover:bg-gray-600"
-              >
-                WordPress Management
-              </Link>
-              <Link
-                to="/services/dataAnalysis"
-                className="block px-2 py-1 hover:bg-gray-600"
-              >
-                Data Analysis
-              </Link>
-              <Link
-                to="/services/contentWriting"
-                className="block px-2 py-1 hover:bg-gray-600"
-              >
-                Content Writing
-              </Link>
-              <Link
-                to="/services/consultingServices"
-                className="block px-2 py-1 hover:bg-gray-600"
-              >
-                Consulting Services
-              </Link>
+              <List>
+                <ListItemButton
+                  className="!px-2 !py-2.5"
+                  component={Link}
+                  to="/services/bookKeeping"
+                >
+                  BookKeeping
+                </ListItemButton>
+                <ListItemButton
+                  className="!px-2 !py-2.5"
+                  component={Link}
+                  to="/services/wordpressManagement"
+                >
+                  Wordpress Management
+                </ListItemButton>
+                <ListItemButton
+                  className="!px-2 !py-2.5"
+                  component={Link}
+                  to="/services/dataAnalysis"
+                >
+                  Data Analysis
+                </ListItemButton>
+                <ListItemButton
+                  className="!px-2 !py-2.5"
+                  component={Link}
+                  to="/services/contentWriting"
+                >
+                  Content Writing
+                </ListItemButton>
+                <ListItemButton
+                  className="!px-2 !py-2.5"
+                  component={Link}
+                  to="/services/consultingServices"
+                >
+                  Consulting Services
+                </ListItemButton>
+              </List>
             </div>
           </div>
 
-          <Link
-            to="/contact"
-            className="relative inline-block text-white px-4 py-2 group"
-          >
-            Contact
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
+          <Link to="/contact">
+            <Button
+              variant="contained"
+              className="!text-base !shadow-none !bg-gray-800 !normal-case"
+            >
+              Contact
+            </Button>
           </Link>
-          <Link
-            to="/privacy"
-            className="relative inline-block text-white px-4 py-2 group"
-          >
-            Privacy
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
+          <Link to="/privacy">
+            <Button
+              variant="contained"
+              className="!text-base !shadow-none !bg-gray-800 !normal-case"
+            >
+              Privacy
+            </Button>
           </Link>
-          <Link
-            to="/terms"
-            className="relative inline-block text-white px-4 py-2 group"
-          >
-            Terms
-            <span className="absolute left-0 bottom-0 w-full h-0.5 bg-white transform scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500 ease-out"></span>
+          <Link to="/terms">
+            <Button
+              variant="contained"
+              className="!text-base !shadow-none !bg-gray-800 !normal-case"
+            >
+              Terms
+            </Button>
           </Link>
         </nav>
+
         <div
-          className={`absolute top-full left-0 w-full bg-gray-800 md:hidden overflow-hidden transition-all duration-300 ease-in-out z-10
-    ${
-      menuOpen ? "max-h-[1000px] py-3 px-4 flex flex-col gap-2" : "max-h-0 px-4"
-    }
+          className={`absolute top-full left-0 w-full bg-gray-800 md:hidden overflow-hidden transition-all duration-50 ease-in-out z-10
+    ${menuOpen ? "max-h-[1000px] py-3 px-4 flex flex-col gap-2" : "h-0 px-4"}
   `}
         >
-          <Link
+          <ListItemButton
+            component={Link}
             to="/"
-            className="hover:underline"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleClick}
+            className="!py-1.5 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
             Home
-          </Link>
-          <Link
+          </ListItemButton>
+          <ListItemButton
+            component={Link}
             to="/about"
-            className="hover:underline"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleClick}
+            className="!py-1.5 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
-            About Us
-          </Link>
-
-          <Link
+            About
+          </ListItemButton>
+          <ListItemButton
+            component={Link}
             to="/services"
-            className="hover:underline"
             onClick={() => {
               setServicesOpen(!servicesOpen);
             }}
+            className="!py-1.5 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
             Services
-          </Link>
+          </ListItemButton>
           {servicesOpen && (
             <div className="pl-4 flex flex-col gap-1">
-              <Link
-                to="/services/bookKeeping"
-                className="hover:underline"
-                onClick={() => setMenuOpen(false)}
-              >
-                Bookkeeping
-              </Link>
-              <Link
-                to="/services/wordpressManagement"
-                className="hover:underline"
-                onClick={() => setMenuOpen(false)}
-              >
-                WordPress Management
-              </Link>
-              <Link
-                to="/services/dataAnalysis"
-                className="hover:underline"
-                onClick={() => setMenuOpen(false)}
-              >
-                Data Analysis
-              </Link>
-              <Link
-                to="/services/contentWriting"
-                className="hover:underline"
-                onClick={() => setMenuOpen(false)}
-              >
-                Content Writing
-              </Link>
-              <Link
-                to="/services/consultingServices"
-                className="hover:underline"
-                onClick={() => setMenuOpen(false)}
-              >
-                Consulting Services
-              </Link>
+              <List className="!py-0">
+                <ListItemButton
+                  className="!px-2 !py-1"
+                  component={Link}
+                  to="/services/bookKeeping"
+                  onClick={handleClick}
+                >
+                  BookKeeping
+                </ListItemButton>
+
+                <ListItemButton
+                  className="!px-2 !py-1"
+                  component={Link}
+                  to="/services/wordpressManagement"
+                  onClick={handleClick}
+                >
+                  Wordpress Management
+                </ListItemButton>
+
+                <ListItemButton
+                  className="!px-2 !py-1"
+                  component={Link}
+                  to="/services/dataAnalysis"
+                  onClick={handleClick}
+                >
+                  Data Analysis
+                </ListItemButton>
+
+                <ListItemButton
+                  className="!px-2 !py-1"
+                  component={Link}
+                  to="/services/contentWriting"
+                  onClick={handleClick}
+                >
+                  Content Writing
+                </ListItemButton>
+
+                <ListItemButton
+                  className="!px-2 !py-1"
+                  component={Link}
+                  to="/services/consultingServices"
+                  onClick={handleClick}
+                >
+                  Consulting Services
+                </ListItemButton>
+              </List>
             </div>
           )}
-          <Link
+          <ListItemButton
+            component={Link}
             to="/contact"
-            className="hover:underline"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleClick}
+            className="!py-1 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
             Contact
-          </Link>
-          <Link
+          </ListItemButton>
+
+          <ListItemButton
+            component={Link}
             to="/privacy"
-            className="hover:underline"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleClick}
+            className="!py-1 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
             Privacy
-          </Link>
-          <Link
+          </ListItemButton>
+          <ListItemButton
+            component={Link}
             to="/terms"
-            className="hover:underline"
-            onClick={() => setMenuOpen(false)}
+            onClick={handleClick}
+            className="!py-1 !px-2 !text-base !shadow-none !bg-gray-800 !normal-case"
           >
             Terms
-          </Link>
+          </ListItemButton>
         </div>
       </header>
 
