@@ -18,33 +18,6 @@ const Services = () => {
     </div>
 
     <div className="space-y-4">
-      <marquee>
-        <h3 className="text-xl font-semibold italic text-black-700">Additional Services</h3>
-      </marquee>
-      <p>
-        In addition to our core offerings, we also provide a range of supplementary services to further support your
-        business needs. These include:
-      </p>
-
-      <ul className="list-disc pl-6 space-y-2">
-        <li>
-          <strong>Social Media Management:</strong> Enhance your online presence and engage with your audience through effective
-          social media strategies.
-        </li>
-        <li>
-          <strong>Graphic Design:</strong> Create visually appealing graphics and branding materials that reflect your business identity.
-        </li>
-        <li>
-          <strong>Virtual Assistance:</strong> Streamline your operations with our virtual assistant services, handling administrative
-          tasks and freeing up your time for strategic initiatives.
-        </li>
-      </ul>
-
-      <h3 className="text-xl font-semibold text-gray-900">Consulting Services</h3>
-      <p>
-        Benefit from our expertise in business strategy, financial planning, and operational
-        efficiency to drive your business forward.
-      </p>
 
       <h2 className="text-xl font-bold text-gray-800">
         At Sharp Gbs, we are dedicated to helping your business thrive through our comprehensive suite of services.

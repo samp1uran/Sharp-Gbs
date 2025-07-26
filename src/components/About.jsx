@@ -39,77 +39,7 @@ const About = () => {
     </section>
 
     <section>
-      <h3 className="text-xl font-bold text-gray-900 mb-4">What We Offer</h3>
-
-      <div className="space-y-4 pl-4 border-l-2 border-gray-300">
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Bookkeeping:</h4>
-          <p>
-            Our meticulous bookkeeping services ensure that your financial records are accurate, organized, and compliant, giving
-            you peace of mind and clarity in your financial health.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Management:</h4>
-          <p>
-            We provide comprehensive management of your WordPress site, including updates, security, backups, and performance
-            optimization, so you can engage your audience without technical worries.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Data Analysis:</h4>
-          <p>
-            Our insightful data analysis services help you make informed business decisions by uncovering trends and opportunities
-            that drive growth.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Content Writing Management:</h4>
-          <p>
-            We create compelling content that resonates with your audience, enhancing your online presence and engagement through
-            professional writing and management services.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Digital Consulting:</h4>
-          <p>
-            Our consulting services offer strategic guidance to help you navigate the digital landscape, optimize your operations,
-            and implement effective solutions tailored to your business goals.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h3 className="text-xl font-bold text-gray-900 mb-4">Why Choose Sharp Gbs?</h3>
-
-      <div className="space-y-4 pl-4 border-l-2 border-gray-300">
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Expertise:</h4>
-          <p>
-            Our team consists of skilled professionals with extensive experience in their respective fields, ensuring you receive
-            top-notch service and support.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Tailored Solutions:</h4>
-          <p>
-            We take the time to understand your business and its unique challenges, allowing us to provide customized solutions
-            that align with your objectives.
-          </p>
-        </div>
-        <div>
-          <h4 className="text-lg font-semibold text-gray-900">Commitment to Quality:</h4>
-          <p>
-            We are dedicated to delivering high-quality results that exceed your expectations, helping you achieve your business
-            goals with confidence.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h4 className="text-lg font-semibold text-gray-900 mb-2">Join Us on Your Journey</h4>
+      <h4 className="text-xl font-bold text-gray-900 mb-2">Join Us on Your Journey</h4>
       <p>
         At Sharp Gbs, we are excited to be part of your business journey. Whether you are a startup looking for foundational
         support or an established company seeking to optimize your operations, we are here to help. Let us be your trusted partner
