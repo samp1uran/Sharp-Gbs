@@ -11,11 +11,13 @@ import WordPressManagement from './components/WordpressManagement'
 import DataAnalysis from './components/DataAnalysis'
 import ContentWriting from './components/ContentWriting'
 import ConsultingServices from './components/ConsultingServices'
+import { AnimatePresence } from "framer-motion";
 
 function App() {
 
   return (
     <>
+    <AnimatePresence mode='wait'>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
@@ -29,6 +31,7 @@ function App() {
         <Route path='/services/contentWriting' element={<ContentWriting/>} />
         <Route path='/services/consultingServices' element={<ConsultingServices/>} />
       </Routes>
+      </AnimatePresence>
     </>
   )
 }

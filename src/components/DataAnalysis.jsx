@@ -1,16 +1,14 @@
-
+import AnimatedPage from "./AnimatedPage";
+import Image from "./Image"
 const DataAnalysis = () => {
   return (
-    <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
+    <AnimatedPage>
+      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
         <div className="space-y-8">
           <h3 className="text-4xl font-bold mb-4">Data Analysis</h3>
 
           <div>
-            <img
-              src="/Data1.jpg"
-              alt="Data Analysis 1"
-              className="w-full h-[480px] object-cover rounded-2xl mb-4"
-            />
+            <Image src="/Data1.jpg" alt="Data Analysis 1" />
           </div>
 
           <p className="text-lg font-medium mb-2">
@@ -31,14 +29,11 @@ const DataAnalysis = () => {
           </p>
 
           <div>
-            <img
-              src="/Data2.jpg"
-              alt="Data Analysis 2"
-              className="w-full h-[480px] object-cover rounded-2xl"
-            />
+            <Image src="/Data2.jpg" alt="Data Analysis 2"/>
           </div>
         </div>
-    </main>
+      </main>
+    </AnimatedPage>
   );
 };
 
