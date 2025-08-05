@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Image = ({ src, alt }) => {
+const Image = ({ src, alt,obj="cover" }) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ const Image = ({ src, alt }) => {
         src={src}
         alt={alt}
         onLoad={() => setLoaded(true)}
-        className={`w-full transition-opacity duration-500 h-[480px] object-cover rounded-2xl mb-4 ${
+        className={`w-full transition-opacity duration-500 h-auto max-h-[400px] object-${obj} rounded-2xl mb-4 ${
           loaded ? "opacity-100" : "opacity-0"
         }`}
       />

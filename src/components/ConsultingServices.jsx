@@ -8,7 +8,7 @@ const ConsultingServices = () => {
         <div className="space-y-8">
           <h3 className="text-4xl font-bold mb-2">Consulting Services:</h3>
           <div>
-            <Image src="/consultingServices.jpg" alt="Consulting Services"/>
+            <Image src="/consultingServices.jpg" alt="Consulting Services" obj="contain"/>
           </div>
           <p className="text-gray-700 mb-4">
             Benefit from our expertise in business strategy, financial planning,
