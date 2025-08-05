@@ -6,7 +6,7 @@ export default function Home() {
       <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
         <div className="space-y-8">
           <section className="bg-gray-100 p-6 rounded-xl shadow">
-            <h1 className="text-4xl font-bold mb-4">Welcome to Sharp Gbs</h1>
+            {/* <h1 className="text-4xl font-bold mb-4">Welcome to Sharp Gbs</h1> */}
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
                 At Sharp Gbs, we understand that running a successful business
