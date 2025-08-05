@@ -16,7 +16,7 @@ const Services = () => {
             highest quality support in every area we cover. Explore our key
             services...
           </p>
-          <div>
+          {/* <div>
             <List>
               <ListItemButton
                 className="!px-3 !py-4 !mb-6 !shadow-xl/20"
@@ -54,7 +54,47 @@ const Services = () => {
                 Consulting Services
               </ListItemButton>
             </List>
-          </div>
+          </div> */}
+          <div>
+  <List className="items-center grid grid-cols-1 md:grid-cols-2 gap-4">
+    <ListItemButton
+      className="!px-3 !py-4 shadow-xl/20"
+      component={Link}
+      to="/services/bookKeeping"
+    >
+      BookKeeping
+    </ListItemButton>
+    <ListItemButton
+      className="!px-3 !py-4 shadow-xl/20"
+      component={Link}
+      to="/services/wordpressManagement"
+    >
+      Wordpress Management
+    </ListItemButton>
+    <ListItemButton
+      className="!px-3 !py-4 shadow-xl/20"
+      component={Link}
+      to="/services/dataAnalysis"
+    >
+      Data Analysis
+    </ListItemButton>
+    <ListItemButton
+      className="!px-3 !py-4 shadow-xl/20"
+      component={Link}
+      to="/services/contentWriting"
+    >
+      Content Writing
+    </ListItemButton>
+    <ListItemButton
+      className="!px-3 !py-4 shadow-xl/20"
+      component={Link}
+      to="/services/consultingServices"
+    >
+      Consulting Services
+    </ListItemButton>
+  </List>
+</div>
+
         </div>
 
         <div className="space-y-4">
