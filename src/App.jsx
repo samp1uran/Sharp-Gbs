@@ -7,7 +7,7 @@ import Privacy from "./components/Privacy";
 import Terms from "./components/Terms";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
-import BookKeeping from "./components/BookKeeping";
+import FinancialServices from "./components/FinancialServices";
 import WordPressManagement from "./components/WordpressManagement";
 import DataAnalysis from "./components/DataAnalysis";
 import ContentWriting from "./components/ContentWriting";
@@ -33,17 +33,11 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/services/bookKeeping" element={<BookKeeping />} />
-          <Route
-            path="/services/wordpressManagement"
-            element={<WordPressManagement />}
-          />
+          <Route path="/services/financialServices" element={<FinancialServices/>} />
+          <Route path="/services/wordpressManagement" element={<WordPressManagement />}/>
           <Route path="/services/dataAnalysis" element={<DataAnalysis />} />
           <Route path="/services/contentWriting" element={<ContentWriting />} />
-          <Route
-            path="/services/consultingServices"
-            element={<ConsultingServices />}
-          />
+          <Route path="/services/consultingServices" element={<ConsultingServices />}/>
         </Routes>
       </AnimatePresence>
     </>

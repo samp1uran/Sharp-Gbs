@@ -4,10 +4,10 @@ import { List, ListItemButton } from "@mui/material";
 
 const services = [
   {
-    title: "BookKeeping",
+    title: "Financial Services",
     description: "Maintain accurate financial records and reports.",
     icon: <Briefcase className="w-6 h-6 text-indigo-600" />,
-    link: "/services/bookKeeping",
+    link: "/services/financialServices",
   },
   {
     title: "Wordpress Management",

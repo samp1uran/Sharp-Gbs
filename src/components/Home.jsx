@@ -1,13 +1,14 @@
 import AnimatedPage from "./AnimatedPage";
 import Image from "./Image";
 import ServicesGrid from "./ServicesGrid";
+import Testimonials from "./Testimonals";
 
 export default function Home() {
   return (
     <AnimatedPage>
       <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-once="false">
         <div className="space-y-8">
-          <section className="bg-gray-100 p-6 rounded-xl shadow">
+          <section className="bg-gray-50 p-6 rounded-xl shadow-xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
                 At Sharp Gbs, we understand that running a successful business
@@ -28,8 +29,8 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-once="false" >
-            <h2 className="text-center text-2xl font-bold mb-2">Our Mission</h2>
+          <section className="bg-gray-50 p-6 rounded-xl shadow-xl" data-aos="fade-up" data-aos-once="false" >
+            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-2">Our Mission</h2>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
                 <Image src="/mission.png" alt="Sharp Gbs" obj="contain"  />
@@ -45,11 +46,12 @@ export default function Home() {
               
             </div>
           </section>
-          <section className="bg-gray-50 p-6 rounded-xl shadow" >
-            <h2 className="text-center text-2xl font-bold mb-2">Our Services</h2>
+          <section className=" p-6 mt-10 rounded-xl" >
+            <h2 className="text-center text-gray-800 text-3xl font-bold mb-2 drop-shadow-sm">Our Services</h2>
             <ServicesGrid/>
           </section>
-          <section className="space-y-4">
+          <Testimonials/>
+          <section className="space-y-4 mt-6 mb-6">
             <h4 className="text-lg font-bold">Get Started Today!</h4>
             <p>
               Are you ready to take your business to the next level? Contact us
