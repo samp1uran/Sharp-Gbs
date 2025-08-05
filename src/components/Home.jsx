@@ -1,10 +1,11 @@
 import AnimatedPage from "./AnimatedPage";
 import Image from "./Image";
+import ServicesGrid from "./ServicesGrid";
 
 export default function Home() {
   return (
     <AnimatedPage>
-      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
+      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-once="false">
         <div className="space-y-8">
           <section className="bg-gray-100 p-6 rounded-xl shadow">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -27,7 +28,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-gray-50 p-6 rounded-xl shadow">
+          <section className="bg-gray-50 p-6 rounded-xl shadow" data-aos="fade-up" data-aos-once="false" >
             <h2 className="text-center text-2xl font-bold mb-2">Our Mission</h2>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
@@ -44,15 +45,10 @@ export default function Home() {
               
             </div>
           </section>
-
-          {/* <div className="rounded-xl overflow-hidden shadow-lg">
-            <img
-              src="/Sharp Gbs.jpg"
-              alt="Sharp Gbs"
-              className="w-full h-auto object-cover rounded-xl"
-            />
-          </div> */}
-
+          <section className="bg-gray-50 p-6 rounded-xl shadow" >
+            <h2 className="text-center text-2xl font-bold mb-2">Our Services</h2>
+            <ServicesGrid/>
+          </section>
           <section className="space-y-4">
             <h4 className="text-lg font-bold">Get Started Today!</h4>
             <p>

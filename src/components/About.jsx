@@ -3,14 +3,14 @@ import AnimatedPage from "./AnimatedPage";
 const About = () => {
   return (
     <AnimatedPage>
-      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
+      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-once="false">
         <div className="space-y-8">
           <h1 className="text-4xl font-bold text-gray-900">About Us:</h1>
           <h2 className="text-2xl font-semibold text-gray-900">
             Your Trusted Partner in Business Solutions
           </h2>
 
-          <section>
+          <section >
             <h3 className="text-xl font-bold text-gray-900 mb-2">Sharp Gbs</h3>
             <p>
               We are more than just a freelancing company; we are your dedicated
