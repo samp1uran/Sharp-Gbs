@@ -241,7 +241,6 @@ function Header() {
         </div>
       </header>
 
-      {/* Marquee Section */}
       <div className="px-6 py-2 max-w-5xl mx-auto leading-relaxed">
         <marquee>
           <p className="my-4 text-2xl font-semibold ">Welcome to Sharp Gbs</p>
