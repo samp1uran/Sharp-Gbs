@@ -1,58 +1,19 @@
-// import AnimatedPage from "./AnimatedPage";
-// import Image from "./Image";
-
-// export default function WordPressManagement() {
-//   return (
-//     <>
-//       <AnimatedPage>
-//         <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed">
-//           <div className="space-y-8">
-//             <h3 className="text-4xl font-semibold mb-2">
-//               WordPress Management
-//             </h3>
-
-//             <div>
-//               <Image src="/wordpressManagement.png" alt="Wordpress Management"/>
-//             </div>
-//             <p className="mb-2">
-//               <b> Comprehensive WordPress Site Management</b>
-//             </p>
-//             <p className="mb-4">
-//               Your website is often the first impression potential customers
-//               have of your business. Our WordPress management services cover all
-//               aspects of your site, including regular updates, secure backups,
-//               robust security measures, and performance optimization. We ensure
-//               that your website runs smoothly and efficiently, allowing you to
-//               engage your audience without technical worries.
-//             </p>
-//             <p>
-//               Our team also provides SEO optimization to enhance your site’s
-//               visibility and attract more visitors. Whether you need help with
-//               theme customization, plugin management, or troubleshooting, we are
-//               here to ensure your WordPress site is always at its best.
-//             </p>
-//           </div>
-//         </main>
-//       </AnimatedPage>
-//     </>
-//   );
-// }
 import AnimatedPage from "./AnimatedPage";
 import Image from "./Image";
 import { Link } from "react-router-dom";
 import { Button } from "@mui/material";
-export default function WordPressManagement() {
+export default function Development() {
   return (
     <AnimatedPage>
       <main className="px-6 py-2 mb-4 text-gray-800 max-w-5xl space-y-4 mx-auto leading-relaxed">
-        <h3 className="text-4xl font-semibold">WordPress Management</h3>
+        <h3 className="text-4xl font-semibold">Development</h3>
 
         <div>
           <Image src="/wordpressManagement.png" alt="Wordpress Management" />
         </div>
 
         <section className="space-y-4">
-          <p className="text-xl font-semibold">📌 Comprehensive WordPress Site Management</p>
+          <p className="text-xl font-semibold">📌 Comprehensive WebSite Development</p>
           <p>
             Your website is often the first impression potential customers have of your business. Our WordPress management services cover all critical aspects of your site, including theme maintenance, plugin updates, uptime monitoring, and performance optimization. We ensure that your website remains fast, reliable, and secure — giving you peace of mind while you focus on your business.
           </p>
@@ -97,7 +58,7 @@ export default function WordPressManagement() {
         </section>
 
         <section className="text-center pt-6">
-          <p className="text-lg font-medium mb-2">Ready to leave your WordPress site in expert hands?</p>
+          <p className="text-lg font-medium mb-2">Ready to leave your Website in expert hands?</p>
           <Link to="/contact">
             <Button variant="contained" className="!bg-gray-800">
               Get in Touch

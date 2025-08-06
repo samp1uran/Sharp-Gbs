@@ -10,29 +10,29 @@ const services = [
     link: "/services/financialServices",
   },
   {
-    title: "Wordpress Management",
+    title: "Development",
     description: "Handle website updates, themes, and plugins efficiently.",
     icon: <Settings className="w-6 h-6 text-indigo-600" />,
-    link: "/services/wordpressManagement",
+    link: "/services/development",
   },
-  {
-    title: "Data Analysis",
-    description: "Uncover insights through professional data analysis.",
-    icon: <BarChart className="w-6 h-6 text-indigo-600" />,
-    link: "/services/dataAnalysis",
-  },
+  // {
+  //   title: "Data Analysis",
+  //   description: "Uncover insights through professional data analysis.",
+  //   icon: <BarChart className="w-6 h-6 text-indigo-600" />,
+  //   link: "/services/dataAnalysis",
+  // },
   {
     title: "Content Writing",
     description: "Engaging and SEO-friendly content creation.",
     icon: <Pencil className="w-6 h-6 text-indigo-600" />,
     link: "/services/contentWriting",
   },
-  {
-    title: "Consulting Services",
-    description: "Get expert guidance tailored to your business goals.",
-    icon: <FileText className="w-6 h-6 text-indigo-600" />,
-    link: "/services/consultingServices",
-  },
+  // {
+  //   title: "Consulting Services",
+  //   description: "Get expert guidance tailored to your business goals.",
+  //   icon: <FileText className="w-6 h-6 text-indigo-600" />,
+  //   link: "/services/consultingServices",
+  // },
 ];
 
 export default function ServicesGrid() {

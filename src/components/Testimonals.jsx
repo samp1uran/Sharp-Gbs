@@ -1,21 +1,18 @@
 const testimonials = [
   {
-    name: "Rohit Sharma",
-    position: "Founder, FinEdge",
+    name: "Rohit Tiwari",
     feedback:
       "Sharp GBS has transformed the way we manage our operations. Their service is prompt, professional, and always reliable.",
     image: "/test1.jpeg",
   },
   {
     name: "Priya Mehta",
-    position: "CEO, TechNova",
     feedback:
       "Impressive team and even better results. Sharp GBS truly understands what businesses need and delivers beyond expectations.",
     image: "/test2.jpeg",
   },
   {
     name: "Jennifer",
-    position: "Operations Head, QuickBooksPro",
     feedback:
       "Highly recommend Sharp GBS! Their attention to detail and support made a huge difference in our workflow.",
     image: "/test3.jpeg",
@@ -46,11 +43,10 @@ const Testimonials = () => {
                 />
                 <div>
                   <h4 className="font-semibold text-gray-800">{t.name}</h4>
-                  <p className="text-sm text-gray-600">{t.position}</p>
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed">
-                “{t.feedback}”
+                {t.feedback}
               </p>
             </div>
           ))}

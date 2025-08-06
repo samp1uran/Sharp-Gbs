@@ -8,10 +8,10 @@ import Terms from "./components/Terms";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import FinancialServices from "./components/FinancialServices";
-import WordPressManagement from "./components/WordpressManagement";
-import DataAnalysis from "./components/DataAnalysis";
+import Development from "./components/Development";
+// import DataAnalysis from "./components/DataAnalysis";
 import ContentWriting from "./components/ContentWriting";
-import ConsultingServices from "./components/ConsultingServices";
+// import ConsultingServices from "./components/ConsultingServices";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,7 +20,7 @@ function App() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      once: true,
+      once: false,
     });
   }, []);
   return (
@@ -34,10 +34,10 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/financialServices" element={<FinancialServices/>} />
-          <Route path="/services/wordpressManagement" element={<WordPressManagement />}/>
-          <Route path="/services/dataAnalysis" element={<DataAnalysis />} />
+          <Route path="/services/development" element={<Development/>}/>
+          {/* <Route path="/services/dataAnalysis" element={<DataAnalysis />} /> */}
           <Route path="/services/contentWriting" element={<ContentWriting />} />
-          <Route path="/services/consultingServices" element={<ConsultingServices />}/>
+          {/* <Route path="/services/consultingServices" element={<ConsultingServices />}/> */}
         </Routes>
       </AnimatePresence>
     </>
