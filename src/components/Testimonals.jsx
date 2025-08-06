@@ -4,21 +4,21 @@ const testimonials = [
     position: "Founder, FinEdge",
     feedback:
       "Sharp GBS has transformed the way we manage our operations. Their service is prompt, professional, and always reliable.",
-    image: "https://i.pravatar.cc/150?img=12",
+    image: "/test1.jpeg",
   },
   {
     name: "Priya Mehta",
     position: "CEO, TechNova",
     feedback:
       "Impressive team and even better results. Sharp GBS truly understands what businesses need and delivers beyond expectations.",
-    image: "https://i.pravatar.cc/150?img=32",
+    image: "/test2.jpeg",
   },
   {
     name: "Jennifer",
     position: "Operations Head, QuickBooksPro",
     feedback:
       "Highly recommend Sharp GBS! Their attention to detail and support made a huge difference in our workflow.",
-    image: "https://i.pravatar.cc/150?img=45",
+    image: "/test3.jpeg",
   },
 ];
 
@@ -32,7 +32,7 @@ const Testimonials = () => {
         <h2 className="text-4xl font-extrabold mb-12 text-gray-800 drop-shadow-sm">
           💬 What Our Clients Say
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 px-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t, index) => (
             <div
               key={index}
