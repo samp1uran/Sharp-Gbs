@@ -92,7 +92,7 @@ const ContactUs = () => {
                   className="w-full border border-gray-300 p-2 rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-400"
                 />
               </div>
-              <Button variant="contained" className="!bg-gray-800">
+              <Button type="submit" variant="contained" className="!bg-gray-800">
                 Send
               </Button>
             </form>
