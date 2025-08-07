@@ -81,7 +81,7 @@ const Privacy = () => {
                   </ul>
                 </div>
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
-                <Image src="/privacy.jpg" alt="Sharp Gbs" obj="contain" />
+                <Image src="https://img.freepik.com/premium-vector/data-protection-concept-data-security-privacy-internet-security-flat-vector-illustration_199064-1167.jpg" alt="Sharp Gbs" obj="contain" />
               </div>
             </div>
           </section>

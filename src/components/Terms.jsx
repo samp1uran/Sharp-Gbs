@@ -21,7 +21,7 @@ export default function Terms() {
             </p>
 
             <div className="max-w-fit rounded-xl  transition-normal duration-400 hover:scale-105">
-              <Image src="/terms.jpg" alt="Sharp Gbs" />
+              <Image src="https://static.vecteezy.com/system/resources/previews/009/268/574/non_2x/terms-and-conditions-legal-concept-design-man-checking-form-and-agree-with-the-terms-and-conditions-vector.jpg" alt="Sharp Gbs" />
             </div>
           </div>
         </section>
