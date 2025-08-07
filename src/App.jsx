@@ -9,9 +9,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import FinancialServices from "./components/FinancialServices";
 import Development from "./components/Development";
-// import DataAnalysis from "./components/DataAnalysis";
 import ContentWriting from "./components/ContentWriting";
-// import ConsultingServices from "./components/ConsultingServices";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -35,9 +33,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/services/financialServices" element={<FinancialServices/>} />
           <Route path="/services/development" element={<Development/>}/>
-          {/* <Route path="/services/dataAnalysis" element={<DataAnalysis />} /> */}
           <Route path="/services/contentWriting" element={<ContentWriting />} />
-          {/* <Route path="/services/consultingServices" element={<ConsultingServices />}/> */}
         </Routes>
       </AnimatePresence>
     </>
