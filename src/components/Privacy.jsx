@@ -1,5 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
-
+import Image from "./Image";
 const Privacy = () => {
   return (
     <AnimatedPage>
@@ -40,9 +40,8 @@ const Privacy = () => {
             </li>
           </ol>
 
-          <h3 className="text-lg font-semibold mt-4">Use of Information</h3>
-          <ol className="list-decimal pl-6 mb-4">
-            <li>
+          <h3 className="text-lg font-semibold mt-2">Use of Information</h3>
+            <div>
               The information we collect is used for the following purposes:
               <ul className="list-disc pl-6 mt-2">
                 <li>
@@ -58,47 +57,46 @@ const Privacy = () => {
                   other relevant information.
                 </li>
               </ul>
-            </li>
-          </ol>
+            </div>
 
-          <h3 className="text-lg font-semibold mt-4">Data Security</h3>
-          <ol className="list-decimal pl-6 mb-4">
-            <li>
-              We take your security seriously. We implement measures including:
-              <ul className="list-disc pl-6 mt-2">
-                <li>Encryption: Protects sensitive info transmitted online.</li>
-                <li>
-                  Access Controls: Limits access to authorized personnel only.
-                </li>
-                <li>Regular Security Audits: Ensures ongoing protection.</li>
-              </ul>
-            </li>
-          </ol>
-
-          <h3 className="text-lg font-semibold mt-4">Cookies</h3>
-          <ol className="list-decimal pl-6 mb-4">
-            <li>
+          <section className="bg-gray-50 p-6 rounded-xl shadow-xl" data-aos="fade-up">
+            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-7">
+              Data Security
+            </h2>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div className="list-decimal pl-6 mb-4">
+                  We take your security seriously. We implement measures
+                  including:
+                  <ul className="list-disc pl-6 mt-2">
+                    <li>
+                      Encryption: Protects sensitive info transmitted online.
+                    </li>
+                    <li>
+                      Access Controls: Limits access to authorized personnel
+                      only.
+                    </li>
+                    <li>
+                      Regular Security Audits: Ensures ongoing protection.
+                    </li>
+                  </ul>
+                </div>
+              <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
+                <Image src="/privacy.jpg" alt="Sharp Gbs" obj="contain" />
+              </div>
+            </div>
+          </section>
+          <h3 className="text-lg font-semibold ">Cookies</h3>
+            <li className=" pl-6 mb-2">
               Our site may use cookies to enhance your experience. You can
               choose to accept or decline via browser settings. Declining may
               limit features.
             </li>
-          </ol>
-
-          <h3 className="text-lg font-semibold mt-4">Changes to this Policy</h3>
-          <ol className="list-decimal pl-6 mb-4">
-            <li>
-              Sharp Gbs reserves the right to update this policy at any time.
-              Changes will appear on this page with an updated date.
-            </li>
-          </ol>
 
           <h3 className="text-lg font-semibold mt-4">Contact Us</h3>
-          <ul className="list-disc pl-6">
-            <li>
+            <li className="list-disc pl-6">
               If you have any questions or concerns about this Privacy Policy,
               contact us at the official email or phone.
             </li>
-          </ul>
         </div>
       </main>
     </AnimatedPage>

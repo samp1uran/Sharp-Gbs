@@ -1,5 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
-
+import Image from "./Image";
 export default function Terms() {
   return (
     <AnimatedPage>
@@ -7,16 +7,24 @@ export default function Terms() {
         <h1 className="text-4xl font-bold mb-2">Terms of Service</h1>
         <hr className="mb-4" />
 
-        <p className="mb-6 text-sm text-gray-500">Last Updated: 20 Apr 2025</p>
+        <section className="bg-gray-50 p-6 rounded-xl mb-5 shadow-xl">
+          <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-7">
+            Data Security
+          </h2>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
+              Welcome to Sharp Gbs. These Terms of Service ("Terms") govern your
+              access to and use of our website, services, and applications
+              (collectively, the "Services"). By accessing or using our
+              Services, you agree to be bound by these Terms. If you do not
+              agree to these Terms, please do not use our Services.
+            </p>
 
-        <p className="mb-6">
-          Welcome to Sharp Gbs. These Terms of Service ("Terms") govern your
-          access to and use of our website, services, and applications
-          (collectively, the "Services"). By accessing or using our Services,
-          you agree to be bound by these Terms. If you do not agree to these
-          Terms, please do not use our Services.
-        </p>
-
+            <div className="max-w-fit rounded-xl  transition-normal duration-400 hover:scale-105">
+              <Image src="/terms.jpg" alt="Sharp Gbs" />
+            </div>
+          </div>
+        </section>
         <div className="space-y-6">
           <section>
             <h2 className="font-semibold text-lg mb-2">

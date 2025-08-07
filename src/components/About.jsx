@@ -11,17 +11,19 @@ const About = () => {
         <div className="space-y-8">
           <h1 className="text-4xl font-bold text-gray-900">About Us:</h1>
           <section className="bg-gray-50 p-6 rounded-xl shadow-xl">
-            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-5">
+            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-7">
               Sharp Gbs
             </h2>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
-                We are more than just a freelancing company. We are your
-                dedicated partner in navigating the complexities of modern
-                business. Founded on the principles of integrity, excellence,
-                and innovation, we specialize in providing a diverse range of
-                professional services designed to empower businesses of all
-                sizes.
+                We are more than just a freelancing company — we are your
+                strategic partner in navigating the complexities of the modern
+                business landscape. Built on the foundational principles of
+                integrity, excellence, and innovation, we are committed to
+                delivering value-driven solutions that go beyond expectations.
+                 With us, you gain not just a service
+                provider — but a trusted ally dedicated to your long-term
+                success.
               </p>
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
                 <Image src="/success.webp" alt="Sharp Gbs" obj="contain" />
