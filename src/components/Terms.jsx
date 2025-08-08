@@ -9,9 +9,6 @@ export default function Terms() {
         <hr className="mb-4" />
 
         <section className="bg-gray-50 p-6 rounded-xl mb-5 shadow-xl">
-          <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-7">
-            Data Security
-          </h2>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
               Welcome to Sharp Gbs. These Terms of Service ("Terms") govern your

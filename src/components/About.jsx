@@ -53,20 +53,27 @@ const About = () => {
               </p>
             </div>
           </section>
-          <section>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
+          
+          <section className="bg-gray-50 p-6 rounded-xl shadow-xl">
+            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-7">
               Our Mission
-            </h3>
-            <p>
-              Our mission is to deliver high-quality, reliable services that
+            </h2>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
+                Our mission is to deliver high-quality, reliable services that
               enable our clients to focus on what they do best—growing their
               business. We believe in building long-term relationships with our
               clients based on trust, transparency, and exceptional service. Our
               goal is to be a valuable extension of your team, providing the
               support and expertise you need to thrive in a competitive
               landscape.
-            </p>
+              </p>
+              <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
+                <Image src="https://www.globepanel.in/img/mission-img.png" alt="Mission" obj="contain" />
+              </div>
+            </div>
           </section>
+
           <section>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Stay Connected
