@@ -1,4 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
+import ContactShortcut from "./ContactShortcut";
 import Image from "./Image";
 const About = () => {
   return (
@@ -21,9 +22,8 @@ const About = () => {
                 business landscape. Built on the foundational principles of
                 integrity, excellence, and innovation, we are committed to
                 delivering value-driven solutions that go beyond expectations.
-                 With us, you gain not just a service
-                provider — but a trusted ally dedicated to your long-term
-                success.
+                With us, you gain not just a service provider — but a trusted
+                ally dedicated to your long-term success.
               </p>
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
                 <Image src="/success.webp" alt="Sharp Gbs" obj="contain" />
@@ -67,30 +67,6 @@ const About = () => {
               landscape.
             </p>
           </section>
-
-          <section>
-            <h4 className="text-xl font-bold text-gray-900 mb-2">
-              Join Us on Your Journey
-            </h4>
-            <p>
-              At Sharp Gbs, we are excited to be part of your business journey.
-              Whether you are a startup looking for foundational support or an
-              established company seeking to optimize your operations, we are
-              here to help. Let us be your trusted partner in achieving success.
-            </p>
-          </section>
-
-          <section>
-            <h3 className="text-xl font-bold text-gray-900 mb-2">
-              Contact Us Today!
-            </h3>
-            <p>
-              Ready to learn more about how Sharp Gbs can support your business?
-              Reach out to us today, and let’s discuss how we can work together
-              to achieve your goals.
-            </p>
-          </section>
-
           <section>
             <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Stay Connected
@@ -101,6 +77,7 @@ const About = () => {
               can navigate the path to success!
             </p>
           </section>
+          <ContactShortcut/>
         </div>
       </main>
     </AnimatedPage>

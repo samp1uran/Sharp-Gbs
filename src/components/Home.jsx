@@ -3,13 +3,24 @@ import Chat from "./Chat";
 import Image from "./Image";
 import ServicesGrid from "./ServicesGrid";
 import Testimonials from "./Testimonals";
-import { Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import ContactShortcut from "./ContactShortcut"
+import { useEffect, useState } from "react";
 export default function Home() {
+  const [chatHidden,setChatHidden]=useState(false)
+  const [isChatTrue,setIsChatTrue]=useState(true)
+  useEffect(()=>{
+    if(localStorage.getItem("chat")!==null){
+      setIsChatTrue(false)
+    }
+  },[chatHidden])
   return (
     <AnimatedPage>
-      <Chat/>
-      <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-once="false">
+      {isChatTrue && <Chat setChatHidden={setChatHidden} />}
+      <main
+        className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed"
+        data-aos="fade-up"
+        data-aos-once="false"
+      >
         <div className="space-y-8">
           <section className="bg-gray-50 p-6 rounded-xl shadow-xl">
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -32,11 +43,17 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="bg-gray-50 p-6 rounded-xl shadow-xl" data-aos="fade-up" data-aos-once="false" >
-            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-2">Our Mission</h2>
+          <section
+            className="bg-gray-50 p-6 rounded-xl shadow-xl"
+            data-aos="fade-up"
+            data-aos-once="false"
+          >
+            <h2 className="text-center text-3xl text-gray-800 drop-shadow-sm font-bold mb-2">
+              Our Mission
+            </h2>
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="rounded-xl  transition-normal duration-400 hover:scale-105">
-                <Image src="/mission.png" alt="Sharp Gbs" obj="contain"  />
+                <Image src="/mission.png" alt="Sharp Gbs" obj="contain" />
               </div>
               <p className="md:w-1/2 text-lg text-gray-700 leading-relaxed">
                 Our mission is to empower businesses like yours by providing
@@ -45,15 +62,15 @@ export default function Home() {
                 access to high-quality support, and we are committed to
                 delivering results that exceed your expectations.
               </p>
-
-              
             </div>
           </section>
-          <section className=" p-6 mt-10 rounded-xl" >
-            <h2 className="text-center text-gray-800 text-3xl font-bold mb-2 drop-shadow-sm">Our Services</h2>
-            <ServicesGrid/>
+          <section className=" px-6 pt-6 pb-3 mt-10 rounded-xl">
+            <h2 className="text-center text-gray-800 text-3xl font-bold mb-2 drop-shadow-sm">
+              Our Services
+            </h2>
+            <ServicesGrid />
           </section>
-          <Testimonials/>
+          <Testimonials />
           <section className="space-y-4 mt-6 mb-6">
             <h4 className="text-lg font-bold">Get Started Today!</h4>
             <p>
@@ -75,20 +92,7 @@ export default function Home() {
               newsletter for the latest updates, tips, and insights to help your
               business thrive.
             </p>
-            <div className="text-center pt-8">
-          <h3 className="text-2xl font-semibold mb-2">
-            🚀 Let’s Elevate Your Brand
-          </h3>
-          <p className="text-gray-700 mb-4">
-            Create compelling, consistent content that builds trust and drives
-            results. Reach out today!
-          </p>
-          <Link to="/contact">
-            <Button variant="contained" className="!bg-gray-800">
-              Contact
-            </Button>
-          </Link>
-        </div>
+            <ContactShortcut/>
           </section>
         </div>
       </main>

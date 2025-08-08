@@ -1,4 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
+import ContactShortcut from "./ContactShortcut";
 import Image from "./Image";
 const Privacy = () => {
   return (
@@ -92,11 +93,7 @@ const Privacy = () => {
               limit features.
             </li>
 
-          <h3 className="text-lg font-semibold mt-4">Contact Us</h3>
-            <li className="list-disc pl-6">
-              If you have any questions or concerns about this Privacy Policy,
-              contact us at the official email or phone.
-            </li>
+          <ContactShortcut/>
         </div>
       </main>
     </AnimatedPage>

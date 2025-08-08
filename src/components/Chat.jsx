@@ -4,10 +4,13 @@ import { toast } from "react-toastify";
 const serviceId = import.meta.env.VITE_serviceId;
 const templateId = import.meta.env.VITE_templateId;
 const publicId = import.meta.env.VITE_publicId;
-function Chat() {
-  const [hidden, setHidden] = useState("visible");
+function Chat({setChatHidden}) {
   const [loading, setLoading] = useState(false);
   const form = useRef();
+  const handleHidden=()=>{
+    localStorage.setItem("chat","hidden")
+    setChatHidden(true)
+  }
   const sendEmail = async (e) => {
     setLoading(true);
     e.preventDefault();
@@ -15,7 +18,7 @@ function Chat() {
       (result) => {
         toast.success("Welcome to Sharp Gbs");
         form.current.reset();
-        setHidden("hidden");
+        handleHidden();
       },
       (error) => {
         toast.error("Error");
@@ -26,15 +29,15 @@ function Chat() {
   return (
     <>
       <div
-        onClick={() => setHidden(hidden == "hidden" ? "visible" : "hidden")}
-        className={`fixed inset-0 z-50  bg-gray-200 opacity-50   ${hidden}`}
+        onClick={handleHidden}
+        className={`fixed inset-0 z-50  bg-gray-200 opacity-50`}
       ></div>
       <div
-        className={`z-50 fixed w-[85%] md:w-[30%] left-1/2 top-1/2 md:left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl shadow-black xl:p-0 ${hidden}`}
+        className={`z-50 fixed w-[85%] md:w-[30%] left-1/2 top-1/2 md:left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl shadow-black xl:p-0`}
       >
         <span
           className=" fixed right-3 text-2xl cursor-pointer text-gray-600 hover:text-gray-800"
-          onClick={() => setHidden("hidden")}
+          onClick={handleHidden}
         >
           &times;
         </span>

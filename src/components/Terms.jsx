@@ -1,4 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
+import ContactShortcut from "./ContactShortcut";
 import Image from "./Image";
 export default function Terms() {
   return (
@@ -147,6 +148,7 @@ export default function Terms() {
               your use of the Services.
             </p>
           </section>
+          <ContactShortcut/>
         </div>
       </main>
     </AnimatedPage>

@@ -9,7 +9,6 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import FinancialServices from "./components/FinancialServices";
 import Development from "./components/Development";
-import ContentWriting from "./components/ContentWriting";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -37,7 +36,6 @@ function App() {
             element={<FinancialServices />}
           />
           <Route path="/services/development" element={<Development />} />
-          <Route path="/services/contentWriting" element={<ContentWriting />} />
         </Routes>
       </AnimatePresence>
       <ToastContainer

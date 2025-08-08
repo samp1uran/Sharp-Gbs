@@ -22,7 +22,7 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section
-      className="relative mb-7 py-8 px-6 sm:px-12 rounded-xl "
+      className="relative mb-7 py-4 px-6 sm:px-12 rounded-xl "
       id="testimonials"
     >
       <div className="relative z-10 max-w-7xl mx-auto text-center">

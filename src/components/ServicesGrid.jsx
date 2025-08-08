@@ -21,12 +21,12 @@ const services = [
   //   icon: <BarChart className="w-6 h-6 text-indigo-600" />,
   //   link: "/services/dataAnalysis",
   // },
-  {
-    title: "Content Writing",
-    description: "Engaging and SEO-friendly content creation.",
-    icon: <Pencil className="w-6 h-6 text-indigo-600" />,
-    link: "/services/contentWriting",
-  },
+  // {
+  //   title: "Content Writing",
+  //   description: "Engaging and SEO-friendly content creation.",
+  //   icon: <Pencil className="w-6 h-6 text-indigo-600" />,
+  //   link: "/services/contentWriting",
+  // },
   // {
   //   title: "Consulting Services",
   //   description: "Get expert guidance tailored to your business goals.",
@@ -37,7 +37,7 @@ const services = [
 
 export default function ServicesGrid() {
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 pt-4">
       <List className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {services.map((service, idx) => (
           <ListItemButton
