@@ -13,6 +13,7 @@ import ContentWriting from "./components/ContentWriting";
 import { AnimatePresence } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   useEffect(() => {
@@ -31,11 +32,23 @@ function App() {
           <Route path="/terms" element={<Terms />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/services/financialServices" element={<FinancialServices/>} />
-          <Route path="/services/development" element={<Development/>}/>
+          <Route
+            path="/services/financialServices"
+            element={<FinancialServices />}
+          />
+          <Route path="/services/development" element={<Development />} />
           <Route path="/services/contentWriting" element={<ContentWriting />} />
         </Routes>
       </AnimatePresence>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        closeOnClick
+        pauseOnHover
+        draggable
+        limit={3}
+      />
     </>
   );
 }

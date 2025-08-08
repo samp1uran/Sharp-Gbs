@@ -1,4 +1,5 @@
 import AnimatedPage from "./AnimatedPage";
+import Chat from "./Chat";
 import Image from "./Image";
 import ServicesGrid from "./ServicesGrid";
 import Testimonials from "./Testimonals";
@@ -7,6 +8,7 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <AnimatedPage>
+      <Chat/>
       <main className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-once="false">
         <div className="space-y-8">
           <section className="bg-gray-50 p-6 rounded-xl shadow-xl">
