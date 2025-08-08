@@ -8,14 +8,14 @@ function Chat() {
   const [hidden, setHidden] = useState("visible");
   const [loading, setLoading] = useState(false);
   const form = useRef();
-  const sendEmail = async(e) => {
+  const sendEmail = async (e) => {
     setLoading(true);
     e.preventDefault();
     await emailjs.sendForm(serviceId, templateId, form.current, publicId).then(
       (result) => {
         toast.success("Welcome to Sharp Gbs");
         form.current.reset();
-        setHidden("hidden")
+        setHidden("hidden");
       },
       (error) => {
         toast.error("Error");
@@ -32,6 +32,13 @@ function Chat() {
       <div
         className={`z-50 fixed w-[85%] md:w-[30%] left-1/2 top-1/2 md:left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg shadow-2xl shadow-black xl:p-0 ${hidden}`}
       >
+        <span
+          className=" fixed right-3 text-2xl cursor-pointer text-gray-600 hover:text-gray-800"
+          onClick={() => setHidden("hidden")}
+        >
+          &times;
+        </span>
+
         <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-black">
             Welcome to Sharp Gbs
@@ -78,16 +85,12 @@ function Chat() {
               disabled={loading}
               className="cursor-pointer w-full bg-blue-500 text-white border-2 bg-primary-600 hover:bg-blue-600 shadow-2xl focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
             >
-              {loading?<div className="m-auto w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>:"Welcome"}
+              {loading ? (
+                <div className="m-auto w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+              ) : (
+                "Welcome"
+              )}
             </button>
-            <p className="text-sm font-light text-gray-900">
-              <span
-                onClick={() => setHidden("hidden")}
-                className="cursor-pointer hover:text-gray-600 font-medium text-gray-500 underline"
-              >
-                Ignore
-              </span>
-            </p>
           </form>
         </div>
       </div>
