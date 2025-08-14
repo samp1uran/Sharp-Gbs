@@ -1,21 +1,12 @@
 import AnimatedPage from "./AnimatedPage";
-import Chat from "./Chat";
 import Image from "./Image";
 import ServicesGrid from "./ServicesGrid";
 import Testimonials from "./Testimonals";
 import ContactShortcut from "./ContactShortcut"
 import { useEffect, useState } from "react";
 export default function Home() {
-  const [chatHidden,setChatHidden]=useState(false)
-  const [isChatTrue,setIsChatTrue]=useState(true)
-  useEffect(()=>{
-    if(localStorage.getItem("chat")!==null){
-      setIsChatTrue(false)
-    }
-  },[chatHidden])
   return (
     <AnimatedPage>
-      {isChatTrue && <Chat setChatHidden={setChatHidden} />}
       <main
         className="px-6 py-2 text-gray-800 max-w-5xl mx-auto leading-relaxed"
         data-aos="fade-up"
